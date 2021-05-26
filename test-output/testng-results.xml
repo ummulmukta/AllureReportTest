@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8927" started-at="2021-05-10T02:27:49Z" finished-at="2021-05-10T02:27:58Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.TestNGRunner@4602c2a9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="8927" started-at="2021-05-10T02:27:49Z" finished-at="2021-05-10T02:27:58Z">
+      <class name="com.testrunner.TestNGRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testrunner.TestNGRunner@4602c2a9]" name="setUpClass" is-config="true" duration-ms="482" started-at="2021-05-10T02:27:49Z" finished-at="2021-05-10T02:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.TestNGRunner@4602c2a9]" name="runScenario" duration-ms="8293" started-at="2021-05-10T02:27:49Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-05-10T02:27:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["positive"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[login functionality test]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate element with text: Alexa
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-AEJL1M7', ip: '192.168.1.239', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Alexa
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-AEJL1M7', ip: '192.168.1.239', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+at com.step.StepAllure.i_enter_user_name(StepAllure.java:59)
+at ✽.I enter user name(file:///C:/Users/Ummul%20Oara%20Mukta/eclipse-workspace/AllureProjectReport/allureFeature/allure.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testrunner.TestNGRunner@4602c2a9]" name="tearDownClass" is-config="true" duration-ms="12" started-at="2021-05-10T02:27:58Z" finished-at="2021-05-10T02:27:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.testrunner.TestNGRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
