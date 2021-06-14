@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8927" started-at="2021-05-10T02:27:49Z" finished-at="2021-05-10T02:27:58Z">
+  <suite name="Default suite" duration-ms="27179" started-at="2021-06-14T21:17:42Z" finished-at="2021-06-14T21:18:09Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.TestNGRunner@4602c2a9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.TestNGRunner@77b7ffa4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="8927" started-at="2021-05-10T02:27:49Z" finished-at="2021-05-10T02:27:58Z">
+    <test name="Default test" duration-ms="27179" started-at="2021-06-14T21:17:42Z" finished-at="2021-06-14T21:18:09Z">
       <class name="com.testrunner.TestNGRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testrunner.TestNGRunner@4602c2a9]" name="setUpClass" is-config="true" duration-ms="482" started-at="2021-05-10T02:27:49Z" finished-at="2021-05-10T02:27:49Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testrunner.TestNGRunner@77b7ffa4]" name="setUpClass" is-config="true" duration-ms="1056" started-at="2021-06-14T21:17:42Z" finished-at="2021-06-14T21:17:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.TestNGRunner@4602c2a9]" name="runScenario" duration-ms="8293" started-at="2021-05-10T02:27:49Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-05-10T02:27:57Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.TestNGRunner@77b7ffa4]" name="runScenario" duration-ms="25855" started-at="2021-06-14T21:17:43Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-14T21:18:09Z">
           <params>
             <param index="0">
               <value>
@@ -27,30 +27,27 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot locate element with text: Alexa
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-AEJL1M7', ip: '192.168.1.239', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: driver.version: unknown]]>
+              <![CDATA[expected [Amazon.com. Spend less.] but found [Facebook - Log In or Sign Up]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Alexa
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-AEJL1M7', ip: '192.168.1.239', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
-at com.step.StepAllure.i_enter_user_name(StepAllure.java:59)
-at ✽.I enter user name(file:///C:/Users/Ummul%20Oara%20Mukta/eclipse-workspace/AllureProjectReport/allureFeature/allure.feature:5)
+              <![CDATA[java.lang.AssertionError: expected [Amazon.com. Spend less.] but found [Facebook - Log In or Sign Up]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.step.StepAllure.i_successfully_logged_in(StepAllure.java:115)
+at ✽.I successfully logged in(file:///C:/Users/Ummul_Mukta/git/AllureReportTest/allureFeature/allure.feature:8)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testrunner.TestNGRunner@4602c2a9]" name="tearDownClass" is-config="true" duration-ms="12" started-at="2021-05-10T02:27:58Z" finished-at="2021-05-10T02:27:58Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testrunner.TestNGRunner@77b7ffa4]" name="tearDownClass" is-config="true" duration-ms="22" started-at="2021-06-14T21:18:09Z" finished-at="2021-06-14T21:18:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
